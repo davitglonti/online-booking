@@ -1,0 +1,10 @@
+.blogList{ 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 40px;
+}
+.blogImage {
+    width: 513.3px;
+    height: 341.51px;
+    border-radius: 20px;
+}

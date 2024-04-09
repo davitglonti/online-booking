@@ -1,0 +1,15 @@
+.Trip {
+    background: #E0E0E0;
+
+}
+.inputs {
+    background: #FFFFFF;
+}
+.input {
+    border-radius: 20px;  
+}
+.TripInputs {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}

@@ -1,0 +1,22 @@
+.mainText {
+    position: absolute;
+    color: #FFFFFF;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .mainText {
+      top: 40%;
+      left: 803px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .mainText {
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }

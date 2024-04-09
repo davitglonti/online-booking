@@ -1,0 +1,20 @@
+.Tours {
+    padding-left: 170px;
+    padding-right: 170px;
+    position: relative;
+}
+.rightClick {
+    position: absolute;
+    right:8%
+}
+
+.ToursList {
+  display: grid;  
+  grid-template-columns: auto auto auto auto;
+   gap: 20px;
+}
+.ToursImg {
+    width: 380px;
+    height: 475.24px;
+   
+}

@@ -1,0 +1,58 @@
+.services {
+    position: relative;
+    padding: 50px;
+}
+.servicesList{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 402px;
+    gap:10px;
+   
+}
+.serviceImage {
+    width: 380px;
+    height: 246px;
+    border-radius: 20px;
+}
+.servicesBtn{
+    position: absolute;
+    left: 91%;
+    top: 24%;
+    background-color: aliceblue;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .popup h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .popup ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .popup ul li {
+    margin-bottom: 10px;
+  }
+  
+  .popup button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
