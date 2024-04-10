@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css'
-const Navbar = () => {
+const Navbar = ({isLoggedIn}) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   useEffect(() => {
@@ -36,11 +36,18 @@ const Navbar = () => {
         <li><a href="#offers" onClick={toggleProfileMenu}>profile
         {isProfileMenuOpen && (
             <div className="profile-menu">
+              {isLoggedIn ?  <ul>
+                <li>Profile</li>
+                <li style={{color:'red'}}>Sign Out</li>
+              </ul>
+              :
               <ul>
                 <li> <a href='/Login'>Sign In</a></li>
                 <li>Sign Up</li>
                 <li>Sign Out</li>
               </ul>
+              }
+             
             </div>
           )}
         </a></li>

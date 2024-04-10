@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import './Login.css';
 
-const Login = () => {
+const Login = ({isLoggedIn, onLogin }) => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -38,6 +38,7 @@ const Login = () => {
       if (userData && formData.email === userData.email && formData.password === userData.password) {
         console.log('Login successful');
         window.location.href = '/service';
+        onLogin();
       } else {
         setErrors({ login: 'Invalid email or password' });
       }

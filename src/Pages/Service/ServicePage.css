@@ -1,0 +1,65 @@
+.servicePage{
+    padding: 200px;
+    height: 100vh;
+}
+
+.ServiceList {
+    width: 94px;
+    height: 33px;
+    background: white;
+    gap: 10px;
+}
+.selectedService{
+    background-color: #FF6700;
+
+}
+.serviceInput {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: none; /* Remove border */
+  background-color: #f0f0f0; /* Background color */
+  border-radius: 4px;
+}
+
+.serviceList {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #f0f0f0; /* Background color */
+  border: none; /* Remove border */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.serviceList:hover {
+  background-color: #e0e0e0;
+}
+
+.serviceList:focus {
+  outline: none;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.serviceBtn {
+    border-radius: 12px;
+    width: 720px;
+    height: 64px;
+    padding: 20px,40px,20px,40px;
+    background: #FF6700;
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 2 / 1 / 5 / 2; }
+    .div3 { grid-area: 1 / 2 / 5 / 5; }
